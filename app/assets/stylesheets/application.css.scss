@@ -16,6 +16,8 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+// Typography Styles
 h1,
 h2,
 h3 {
@@ -23,7 +25,7 @@ h3 {
 }
 
 
-
+// Background Gradient 
 .navbar,
 .home-callout {
     //Gradient provided by @_ighosh at uiGradients.com
@@ -35,28 +37,19 @@ h3 {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Nav Styles 
 .navbar {
     border: none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: white;
+    &:hover {
+        color: rgb(197, 189, 219);
+        opacity: 0.75;
+    }
 }
-
-.navbar-default .navbar-brand:hover {
-    color: rgb(197, 189, 219);
-    opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: rgb(197, 189, 219);
-    opacity: 0.75;
-}
-
+// Homepage Styles
 .home-callout {
     color: white;
     margin-top: -20px;
